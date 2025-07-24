@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Notas y Promedios</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./img/snp2.png" alt="Simulador de Notas y Promedios" id="headerImage">
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Ingresar Nota</h2>
+            <p class="info-message-small">Este simulador solo permite un máximo de 10 notas a calcular y un mínimo de 2.</p>
+            <div class="form-group">
+                <label for="notaInput">Nota (0-10):</label>
+                <input type="number" id="notaInput" min="0" max="10" step="0.1" placeholder="Ej: 7.5">
+                <button id="agregarNotaBtn">Agregar Nota</button>
+            </div>
+            <button id="limpiarNotasBtn" class="secondary-btn">Limpiar Todas las Notas</button>
+        </section>
+
+        <section class="notes-display-section">
+            <h2>Notas Ingresadas</h2>
+            <div id="listaNotasContainer" class="notes-list-container">
+                <p id="mensajeNoNotas">No hay notas ingresadas aún.</p>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2>Resultados</h2>
+            <button id="calcularPromedioBtn">Calcular Promedio</button>
+            <div id="resultadoPromedio" class="result-box">
+                <p>Promedio: <span id="promedioValor">--</span></p>
+                <p>Estado: <span id="estadoAprobacion">--</span></p>
+            </div>
+            <p id="mensajeError" class="error-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simulador de Notas - Creado por Nelson Dorador</p>
+    </footer>
+</body>
+</html>
