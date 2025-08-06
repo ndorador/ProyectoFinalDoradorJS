@@ -1,5 +1,5 @@
 const CLAVE_STORAGE = "legajoDeAlumnos";
-const URL_LEGAJO = "../data/legajo.json";
+const URL_LEGAJO = "./data/legajo.json";
 
 export async function getAlumnos() {
     const datosGuardados = localStorage.getItem(CLAVE_STORAGE);
