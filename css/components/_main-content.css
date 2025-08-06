@@ -1,0 +1,123 @@
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-content h2 {
+    color: #34495e;
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#mensajeSinAlumno {
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#listaDeNotas {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.tarea-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.tarea-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tarea-item .task-actions {
+    display: flex;
+    gap: 15px; 
+}
+
+.add-task-form {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+}
+
+.add-task-form h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.add-task-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.notas-container {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+}
+
+.notas-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.info-message-small {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.result-box {
+    text-align: center;
+    background-color: #e9f7ef;
+    border: 1px solid #d4edda;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.result-box.reprobado-bg {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.result-box p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#promedioValor, #estadoAprobacion {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.status-approved {
+    color: #28a745;
+}
+
+.status-failed {
+    color: #dc3545;
+}

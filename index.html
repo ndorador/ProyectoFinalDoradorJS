@@ -3,49 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Notas y Promedios</title>
+    <title>SIMULADOR</title>
+
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     <link rel="stylesheet" href="./css/style.css">
-    
-    <script defer src="./js/main.js"></script>
 </head>
 <body>
     <header>
-        <img src="./img/snp2.png" alt="Simulador de Notas y Promedios" id="headerImage">
+        <div class="header-content">
+            <img src="./img/logo.png" alt="Logo" class="header-logo">
+            <h1>SIMULADOR DE NOTAS Y PROMEDIOS</h1>
+        </div>
     </header>
 
     <main>
-        <section class="input-section">
-            <h2>Ingresar Nota</h2>
-            <p class="info-message-small">Este simulador solo permite un máximo de 10 notas a calcular y un mínimo de 2.</p>
-            <div class="form-group">
-                <label for="notaInput">Nota (0-10):</label>
-                <input type="number" id="notaInput" min="0" max="10" step="0.1" placeholder="Ej: 7.5">
-                <button id="agregarNotaBtn">Agregar Nota</button>
-            </div>
-            <button id="limpiarNotasBtn" class="secondary-btn">Limpiar Todas las Notas</button>
-        </section>
+        <aside class="sidebar">
+            <h2>Alumnos</h2>
+            <p class="info-message-small">Máximo de 20 alumnos.</p>
+            <div id="listaAlumnos" class="alumno-buttons-container">
+                </div>
+            <button id="agregarAlumnoBtn" class="add-btn">Agregar Nuevo Alumno</button>
+        </aside>
 
-        <section class="notes-display-section">
-            <h2>Notas Ingresadas</h2>
-            <div id="listaNotasContainer" class="notes-list-container">
-                <p id="mensajeNoNotas">No hay notas ingresadas aún.</p>
-            </div>
-        </section>
+        <section class="main-content">
+            <h2 id="tituloAlumno">Selecciona un alumno</h2>
+            <p id="mensajeSinAlumno">Elige un alumno de la lista para ver su legajo.</p>
 
-        <section class="results-section">
-            <h2>Resultados</h2>
-            <button id="calcularPromedioBtn">Calcular Promedio</button>
-            <div id="resultadoPromedio" class="result-box">
-                <p>Promedio: <span id="promedioValor">--</span></p>
-                <p>Estado: <span id="estadoAprobacion">--</span></p>
+            <div id="legajoContainer" style="display: none;">
+                <div class="project-actions-container">
+                    <button id="modificarAlumnoBtn" class="mod-btn" disabled>Modificar Nombre</button>
+                    <button id="eliminarAlumnoBtn" class="delete-btn" disabled>Eliminar Alumno</button>
+                </div>
+                
+                <h3>Materias</h3>
+                <div class="materia-actions-container">
+                    <button id="modificarMateriaBtn" class="mod-btn" disabled>Modificar Materia</button>
+                    <button id="eliminarMateriaBtn" class="delete-btn" disabled>Eliminar Materia</button>
+                </div>
+
+                <div id="listaDeMaterias" class="materia-buttons-container">
+                    </div>
+                <div class="add-task-form">
+                    <input type="text" id="nuevaMateriaInput" placeholder="Nombre de la nueva materia">
+                    <button id="agregarMateriaBtn" class="add-btn">Agregar Materia</button>
+                </div>
+                
+                <div id="notasContainer" class="notas-container" style="display: none;">
+                    <h3>Notas</h3>
+                    <p class="info-message-small">Máximo 7 notas por materia. Mínimo 2 para calcular promedio.</p>
+                    <ul id="listaDeNotas">
+                        </ul>
+                    
+                    <div class="add-task-form">
+                        <input type="number" id="nuevaNotaInput" placeholder="Valor de la nota (1-10)" min="1" max="10" step="0.1">
+                        <button id="agregarNotaBtn" class="add-btn">Agregar Nota</button>
+                    </div>
+
+                    <div class="result-box">
+                        <p>Promedio: <span id="promedioValor">--</span></p>
+                        <p>Estado: <span id="estadoAprobacion">--</span></p>
+                    </div>
+                </div>
             </div>
-            <p id="mensajeError" class="error-message"></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Simulador de Notas - Creado por Nelson Dorador</p>
+        <p>&copy; 2025 SIMULADOR DE NOTAS Y PROMEDIOS - CREADO POR NELSON DORADOR BRUNA.</p>
     </footer>
+
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>

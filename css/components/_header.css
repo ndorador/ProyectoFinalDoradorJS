@@ -1,0 +1,31 @@
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url('/img/fondoheader.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-logo {
+    height: 60px; 
+    width: auto;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #1a1919; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+

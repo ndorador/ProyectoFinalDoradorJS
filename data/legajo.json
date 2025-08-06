@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan Pérez",
+    "materias": [
+      {
+        "id": 101,
+        "nombre": "Matemáticas",
+        "notas": [4, 5, 3]
+      },
+      {
+        "id": 102,
+        "nombre": "Física",
+        "notas": [6, 7, 6]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "María López",
+    "materias": [
+      {
+        "id": 201,
+        "nombre": "Historia",
+        "notas": [3, 2, 3]
+      },
+      {
+        "id": 202,
+        "nombre": "Literatura",
+        "notas": [7, 7, 7]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Pedro Sánchez",
+    "materias": [
+      {
+        "id": 301,
+        "nombre": "Programación",
+        "notas": [7, 7, 6, 7, 7]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Sofía Torres",
+    "materias": [
+      {
+        "id": 401,
+        "nombre": "Química",
+        "notas": [7, 7, 7, 6, 7, 7, 7]
+      },
+      {
+        "id": 402,
+        "nombre": "Biología",
+        "notas": [7, 6, 7]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Luis Mendoza",
+    "materias": [
+      {
+        "id": 501,
+        "nombre": "Educación Física",
+        "notas": [7, 6]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "Ana Ramírez",
+    "materias": [
+      {
+        "id": 601,
+        "nombre": "Filosofía",
+        "notas": [1, 2, 3]
+      }
+    ]
+  }
+]
