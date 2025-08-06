@@ -1,6 +1,6 @@
-import { generarId } from './utils.js';
-import { saveAlumnos } from './dataService.js';
-import { renderizarLegajo, DOMElements, CONSTANTES_UI } from './ui.js';
+import { generarId } from '../utils.js';
+import { saveAlumnos } from '../dataService.js';
+import { renderizarLegajo, DOMElements, CONSTANTES_UI } from '../ui.js';
 
 let alumnos = [];
 let alumnoSeleccionadoId = null;

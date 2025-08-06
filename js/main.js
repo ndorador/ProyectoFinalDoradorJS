@@ -1,6 +1,6 @@
-import { getAlumnos } from './dataService.js';
-import { setAlumnos, setAlumnoSeleccionado, setMateriaSeleccionada, actualizarUI, agregarAlumno, modificarAlumno, eliminarAlumno, agregarMateria, modificarMateria, eliminarMateria, agregarNota, manejarAccionNota } from './logic.js';
-import { DOMElements } from './ui.js';
+import { getAlumnos } from '../dataService.js';
+import { setAlumnos, setAlumnoSeleccionado, setMateriaSeleccionada, actualizarUI, agregarAlumno, modificarAlumno, eliminarAlumno, agregarMateria, modificarMateria, eliminarMateria, agregarNota, manejarAccionNota } from '../logic.js';
+import { DOMElements } from '../ui.js';
 
 
 DOMElements.listaAlumnos.addEventListener('click', (e) => {
