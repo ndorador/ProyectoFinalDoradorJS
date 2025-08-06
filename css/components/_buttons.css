@@ -1,4 +1,3 @@
-
 .alumno-btn, .materia-btn {
     padding: 12px;
     border: 1px solid #ccc;
@@ -30,7 +29,6 @@
     margin-bottom: 20px;
 }
 
-
 .materia-btn {
     padding: 10px 15px; 
     border: 1px solid #007bff;
@@ -40,8 +38,6 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    
-   
     width: auto; 
 }
 
@@ -54,8 +50,6 @@
     background-color: #007bff;
     color: #fff;
 }
-
-
 
 .add-btn, .mod-btn, .delete-btn {
     padding: 10px 15px;
@@ -80,8 +74,6 @@
 .delete-btn { background-color: #dc3545; }
 .delete-btn:hover { background-color: #c82333; }
 
-
-
 .project-actions-container, .materia-actions-container {
     display: flex;
     gap: 10px;
@@ -93,13 +85,8 @@
     font-size: 0.9em;
 }
 
-
 button:disabled {
     background-color: #ccc !important;
     cursor: not-allowed;
     opacity: 0.6;
 }
-
-
-
-

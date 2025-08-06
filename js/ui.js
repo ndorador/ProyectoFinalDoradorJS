@@ -1,9 +1,4 @@
-export const CONSTANTES_UI = {
-    NOTA_MINIMA_APROBACION: 4,
-    MIN_NOTAS_PARA_CALCULAR: 2,
-    MAX_NOTAS_POR_MATERIA: 7,
-    MAX_ALUMNOS: 20
-};
+import { CONSTANTES_UI } from './logic.js'; // Importamos las constantes desde logic.js
 
 export const DOMElements = {
     listaAlumnos: document.getElementById('listaAlumnos'),

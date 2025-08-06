@@ -1,4 +1,3 @@
-
 @media (max-width: 768px) {
     body {
         padding: 10px; 
@@ -20,7 +19,6 @@
     .main-content {
         padding: 15px;
     }
-
     
     .header-content h1 {
         font-size: 2rem;
@@ -47,7 +45,6 @@
         font-size: 1rem;
     }
 
-    
     .alumno-buttons-container,
     .materia-buttons-container {
         gap: 5px;

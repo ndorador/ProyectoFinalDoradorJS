@@ -1,6 +1,13 @@
 import { generarId } from './utils.js';
 import { saveAlumnos } from './dataService.js';
-import { renderizarLegajo, DOMElements, CONSTANTES_UI } from '../ui.js';
+import { renderizarLegajo, DOMElements } from './ui.js';
+
+export const CONSTANTES_UI = {
+    NOTA_MINIMA_APROBACION: 4,
+    MIN_NOTAS_PARA_CALCULAR: 2,
+    MAX_NOTAS_POR_MATERIA: 7,
+    MAX_ALUMNOS: 20
+};
 
 let alumnos = [];
 let alumnoSeleccionadoId = null;
@@ -169,7 +176,6 @@ export function agregarMateria() {
 }
 
 export function modificarMateria() {
-    const { alumnos, alumnoSeleccionadoId, materiaSeleccionadaId } = getEstado();
     const alumno = alumnos.find(a => a.id === alumnoSeleccionadoId);
     const materia = alumno?.materias.find(m => m.id === materiaSeleccionadaId);
     if (!materia) return;
@@ -204,7 +210,6 @@ export function modificarMateria() {
 }
 
 export function eliminarMateria() {
-    const { alumnos, alumnoSeleccionadoId, materiaSeleccionadaId } = getEstado();
     const alumno = alumnos.find(a => a.id === alumnoSeleccionadoId);
     if (!alumno) return;
     const materia = alumno.materias.find(m => m.id === materiaSeleccionadaId);
@@ -236,7 +241,6 @@ export function eliminarMateria() {
 }
 
 export function agregarNota() {
-    const { alumnos, alumnoSeleccionadoId, materiaSeleccionadaId } = getEstado();
     const alumno = alumnos.find(a => a.id === alumnoSeleccionadoId);
     const materia = alumno?.materias.find(m => m.id === materiaSeleccionadaId);
     if (!materia) return;
@@ -280,7 +284,6 @@ export function manejarAccionNota(target) {
     if (!notaItem) return;
 
     const notaIndex = parseInt(notaItem.dataset.notaIndex);
-    const { alumnos, alumnoSeleccionadoId, materiaSeleccionadaId } = getEstado();
     const alumno = alumnos.find(a => a.id === alumnoSeleccionadoId);
     const materia = alumno?.materias.find(m => m.id === materiaSeleccionadaId);
     if (!materia) return;
