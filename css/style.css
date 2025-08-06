@@ -3,4 +3,4 @@
 @import url('../components/_sidebar.css');
 @import url('../components/_main-content.css');
 @import url('../components/_buttons.css');
-@import url('../css/media.css');
+@import url('media.css');
