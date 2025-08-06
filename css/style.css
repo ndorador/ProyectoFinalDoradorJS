@@ -1,6 +1,6 @@
-@import url('components/_base.css');
-@import url('../components/_header.css');
-@import url('../components/_sidebar.css');
-@import url('../components/_main-content.css');
-@import url('components/_buttons.css');
-@import url('./media.css');
+@import url('./components/_base.css');
+@import url('./components/_header.css');
+@import url('./components/_sidebar.css');
+@import url('./components/_main-content.css');
+@import url('./components/_buttons.css');
+@import url('media.css');
