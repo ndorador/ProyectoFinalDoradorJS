@@ -3,7 +3,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    background-image: url('./img/fondoheader.jpg'); 
+    background-image: url('../img/fondoheader.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
